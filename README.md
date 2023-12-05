@@ -1,6 +1,6 @@
-# Mono repository for Talos/k3s backed by Flux
+# Mono repository for Single Node Talos backed by Flux
 
-My highly opinionated monolithic repository to be run with an existing [Talos](https://www.talos.dev) cluster, with [Terraform](https://www.terraform.io) backed by [Flux](https://toolkit.fluxcd.io/) and [SOPS](https://toolkit.fluxcd.io/guides/mozilla-sops/).
+My highly opinionated monolithic repository to be run with an existing [Talos](https://www.talos.dev) single node dev/test cluster, with [Terraform](https://www.terraform.io) backed by [Flux](https://toolkit.fluxcd.io/) and [SOPS](https://toolkit.fluxcd.io/guides/mozilla-sops/).
 
 
 ## Overview
@@ -340,9 +340,9 @@ Now that you have the webhook url and secret, it's time to set everything up on 
 
 ### 💾 Storage
 
-Rancher's `local-path-provisioner` is a great start for storage but for a reliable solution for Talos, use Rook Ceph.
+Rancher's `local-path-provisioner` is a great start for storage for a test/development single node cluster.
 
-- [rook-ceph](https://github.com/rook/rook)
+- [local-path-provisioner](https://github.com/rancher/local-path-provisioner)
 - [nfs-subdir-external-provisioner](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner)
 
 ### 🔏 Authenticate Flux over SSH
