@@ -32,6 +32,7 @@ tasks:
     vars:
       DEPS: >-
         age
+        cloudflared
         direnv
         fluxcd/tap/flux
         go-task/tap/go-task
