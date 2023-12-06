@@ -7,8 +7,6 @@ metadata:
 spec:
   dependsOn:
     - name: flux
-    - name: cluster-core
-    - name: crds-kube-prometheus-stack
   interval: 30m
   path: ./kubernetes/apps
   prune: true
